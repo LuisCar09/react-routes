@@ -23,6 +23,7 @@ const projects = [
     description: 'This is a description of project 3',
     url: 'https://www.google.com',
   },
+  
 ];
 
 export default projects;
