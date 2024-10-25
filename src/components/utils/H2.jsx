@@ -1,6 +1,6 @@
-const TitleH2 = ({name,id=''}) => {
+const TitleH2 = ({nameTitle,id=''}) => {
     return(
-        <h2 id={`${id}`}>{name}</h2>
+        <h2 id={`${id}`}>{nameTitle}</h2>
     )
 }
 
