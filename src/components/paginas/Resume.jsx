@@ -1,8 +1,8 @@
 import {studies, experiences} from '../../data/resume.js'
 import TitleH2 from "../utils/H2"
-import ImageComponent from "../utils/Image"
+
 import ParagraphComponent from "../utils/Paragraph"
-import Card from '../cards/Card.jsx'
+
 const Resume = () => {
     
     const allInformation = [...studies,...experiences].flat()
@@ -14,6 +14,8 @@ const Resume = () => {
             const {title,institution,date,company} = info
             return(
                 <>
+                {!institution ? <TitleH2 nameTitle={'Experience'} /> : <TitleH2 nameTitle={'Studies'} />}
+                
                 <TitleH2 nameTitle={title} />
                 <ParagraphComponent titleDescription={!institution ? company : institution} description={date} />
                 </>
